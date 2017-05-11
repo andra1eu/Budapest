@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Budapest</string>
+    <string name="budapest">Budapest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facts_you_didn_t_know_about_budapest">Facts you didn\'t know about Budapest</string>
+    <string name="budapest_in_hot">Budapest in hot. Literally, since Budapest has more thermal springs than any other capital city in the world. An amazing 70 million liters of thermal water rises to the surface daily. The hot springs have given birth to dozens of medicinal baths and to a bathing culture dating back to Roman times.</string>
+    <string name="largest_parliament">Budapest is home to the third largest Parliament building in the world</string>
+    <string name="oldest_subway">Budapest has the oldest subway-line in mainland Europe.</string>
+    <string name="the_budapest_zoo">The Budapest Zoo is one of the oldest zoos in the world. The Budapest Zoo opened its doors in 1865 and in addition to the animals it features a number of noteworthy Art Nouveau buildings and structures, like the Elephant House, the Palm House and the main entrance.</string>
+    <string name="art_and_culture">Budapest is big on art and culture. There are more than 40 theaters and over 100 museums and galleries in the city. Many concerts, festivals and events are held year-round, not to mention performances at the famous Opera House, which is considered to be among the best opera houses in the world.</string>
+</resources>

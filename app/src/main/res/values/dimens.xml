@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="interest_icon_height">120dp</dimen>
+    <dimen name="interest_icon_width">160dp</dimen>
+    <dimen name="margins">8dp</dimen>
+    <dimen name="large_margins">16dp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="normal_text">16sp</dimen>
+</resources>

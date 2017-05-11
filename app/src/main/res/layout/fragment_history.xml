@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context="com.example.andralung.budapest.fragments.HistoryFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margins"
+            android:layout_marginLeft="@dimen/margins"
+            android:layout_marginRight="@dimen/margins"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/large_margins"
+            android:gravity="center"
+            android:text="@string/facts_you_didn_t_know_about_budapest"
+            android:textSize="@dimen/normal_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margins"
+            android:layout_marginLeft="@dimen/margins"
+            android:layout_marginRight="@dimen/margins"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/large_margins"
+            android:text="@string/budapest_in_hot"
+            android:textSize="@dimen/normal_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margins"
+            android:layout_marginLeft="@dimen/margins"
+            android:layout_marginRight="@dimen/margins"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:text="@string/largest_parliament"
+            android:textSize="@dimen/normal_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/parliament"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:layout_marginRight="@dimen/margins"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/margins"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="@dimen/margins"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/oldest_subway"
+            android:textSize="@dimen/normal_text"
+            android:layout_marginTop="@dimen/margins"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginRight="@dimen/margins"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/margins"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:id="@+id/textView4" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/the_budapest_zoo"
+            android:textSize="@dimen/normal_text"
+            android:layout_marginTop="@dimen/margins"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/margins"
+            android:layout_marginRight="@dimen/margins"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:id="@+id/textView5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/art_and_culture"
+            android:textSize="@dimen/normal_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/margins"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:id="@+id/textView6" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
