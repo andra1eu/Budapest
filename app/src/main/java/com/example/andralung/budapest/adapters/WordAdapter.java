@@ -2,6 +2,7 @@ package com.example.andralung.budapest.adapters;
 
 
 import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
@@ -76,6 +77,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         @OnClick(R.id.image_sound)
         void makeSound(View v) {
             releaseMediaPlayer();
+
             int position = (int) v.getTag();
             Word word = getItem(position);
 

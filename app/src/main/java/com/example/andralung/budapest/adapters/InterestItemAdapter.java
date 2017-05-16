@@ -32,9 +32,11 @@ public class InterestItemAdapter extends ArrayAdapter<InterestItem> {
 
         ImageView icon = (ImageView) convertView.findViewById(R.id.icon);
         TextView textView = (TextView)convertView.findViewById(R.id.interest_section);
+        TextView foodDescription = (TextView) convertView.findViewById(R.id.food_description);
 
         icon.setImageResource(item.getInterestIcon());
         textView.setText(item.getInterestSection());
+        foodDescription.setText(item.getFoodDescription());
 
         return convertView;
     }

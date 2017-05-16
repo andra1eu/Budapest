@@ -10,6 +10,8 @@ import android.widget.ListView;
 
 import com.example.andralung.budapest.adapters.InterestItemAdapter;
 import com.example.andralung.budapest.fragments.AttractionsFragment;
+import com.example.andralung.budapest.fragments.CuisineFragment;
+import com.example.andralung.budapest.fragments.CurrencyFragment;
 import com.example.andralung.budapest.fragments.HistoryFragment;
 import com.example.andralung.budapest.fragments.PocketDictionaryFragment;
 import com.example.andralung.budapest.fragments.RestaurantsFragment;
@@ -29,10 +31,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         manager = getSupportFragmentManager();
 
         ArrayList<InterestItem> interestItem = new ArrayList<>();
-        interestItem.add(new InterestItem(R.drawable.borbirosag, "Restaurants"));
-        interestItem.add(new InterestItem(R.drawable.choco, "Attractions"));
-        interestItem.add(new InterestItem(R.drawable.dex, "Pocket Dictionary"));
-        interestItem.add(new InterestItem(R.drawable.parliament, "History"));
+        interestItem.add(new InterestItem(R.drawable.borbirosag, getString(R.string.restaurants)));
+        interestItem.add(new InterestItem(R.drawable.choco, getString(R.string.attractions)));
+        interestItem.add(new InterestItem(R.drawable.dex, getString(R.string.pocket)));
+        interestItem.add(new InterestItem(R.drawable.parliament, getString(R.string.history)));
+        interestItem.add(new InterestItem(R.drawable.forint, getString(R.string.currency)));
+        interestItem.add(new InterestItem(R.drawable.goulash, getString(R.string.cuisine)));
 
         adapter = new InterestItemAdapter(this, interestItem);
         ListView listView = (ListView) findViewById(R.id.list_view);
@@ -68,6 +72,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         .addToBackStack(HistoryFragment.TAG)
                         .commit();
                 break;
+            case 4:
+                manager.beginTransaction()
+                        .replace(R.id.container, new CurrencyFragment(), CurrencyFragment.TAG)
+                        .addToBackStack(CurrencyFragment.TAG)
+                        .commit();
+                break;
+            case 5:
+                manager.beginTransaction()
+                        .replace(R.id.container, new CuisineFragment(), CuisineFragment.TAG)
+                        .addToBackStack(CuisineFragment.TAG)
+                        .commit();
+
+
         }
     }
 

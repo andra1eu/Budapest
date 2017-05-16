@@ -33,14 +33,14 @@ public class PocketDictionaryFragment extends Fragment {
         ButterKnife.bind(this, root);
 
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("How are you?", "\nHogy vagy?", R.drawable.listen, R.raw.audio));
-        words.add(new Word("What is your name?", "\nMi a neved?", R.drawable.listen, R.raw.audio));
-        words.add(new Word("Where is the opera?", "\nHol van az opera?", R.drawable.listen, R.raw.audio));
-        words.add(new Word("Can you take us a picture?", "\nKépzelhetsz nekünk egy képet?", R.drawable.listen, R.raw.audio));
-        words.add(new Word("Where is the restaurant?", "\nMerre van az étterem?", R.drawable.listen, R.raw.audio));
-        words.add(new Word("Where can I find a good hotel?", "\nHol találok egy jó szállodát?", R.drawable.listen, R.raw.audio));
-        words.add(new Word("Can you help me, please?", "\nTudnál segíteni?", R.drawable.listen, R.raw.audio));
-        words.add(new Word("Where can I find an exchange?", "\nHol találhatok cserét?", R.drawable.listen, R.raw.audio));
+        words.add(new Word(getString(R.string.english1), getString(R.string.hung1), R.drawable.listen, R.raw.hogy_vagy));
+        words.add(new Word(getString(R.string.english2), getString(R.string.hung2), R.drawable.listen, R.raw.what_is_name));
+        words.add(new Word(getString(R.string.english3), getString(R.string.hung3), R.drawable.listen, R.raw.where_opera));
+        words.add(new Word(getString(R.string.english4), getString(R.string.hungarian_tr), R.drawable.listen, R.raw.photo));
+        words.add(new Word(getString(R.string.english5), getString(R.string.hung5), R.drawable.listen, R.raw.restaurant));
+        words.add(new Word(getString(R.string.english6), getString(R.string.hung6), R.drawable.listen, R.raw.good_hotel));
+        words.add(new Word(getString(R.string.english7), getString(R.string.hung7), R.drawable.listen, R.raw.can_you_help));
+        words.add(new Word(getString(R.string.english8), getString(R.string.hung8), R.drawable.listen, R.raw.exchange));
 
          adapter = new WordAdapter(getActivity(), words);
         listView.setAdapter(adapter);

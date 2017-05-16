@@ -43,8 +43,8 @@
 
     <ImageView
         android:id="@+id/image_sound"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="@dimen/margins"
         android:layout_marginEnd="@dimen/margins"
         android:layout_marginRight="@dimen/margins"
